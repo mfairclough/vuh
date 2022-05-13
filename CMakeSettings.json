@@ -1,0 +1,80 @@
+﻿{
+  "configurations": [
+    {
+      "name": "x64-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "VUH_BUILD_TYPE",
+          "value": "STATIC",
+          "type": "STRING"
+        },
+        {
+          "name": "VUH_BUILD_TESTS",
+          "value": "false",
+          "type": "BOOL"
+        },
+        {
+          "name": "VUH_BUILD_EXAMPLES",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "VUH_BUILD_DOCS",
+          "value": "false",
+          "type": "BOOL"
+        },
+        {
+          "name": "VUH_BUILD_BENCHMARKS",
+          "value": "false",
+          "type": "BOOL"
+        }
+      ]
+    },
+    {
+      "name": "x64-Release",
+      "generator": "Ninja",
+      "configurationType": "RelWithDebInfo",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "variables": [
+        {
+          "name": "VUH_BUILD_DOCS",
+          "value": "False",
+          "type": "BOOL"
+        },
+        {
+          "name": "VUH_BUILD_TESTS",
+          "value": "False",
+          "type": "BOOL"
+        },
+        {
+          "name": "VUH_BUILD_EXAMPLES",
+          "value": "true",
+          "type": "BOOL"
+        },
+        {
+          "name": "VUH_BUILD_BENCHMARKS",
+          "value": "false",
+          "type": "BOOL"
+        },
+        {
+          "name": "VUH_BUILD_TYPE",
+          "value": "STATIC",
+          "type": "STRING"
+        }
+      ]
+    }
+  ]
+}
