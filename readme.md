@@ -1,4 +1,4 @@
-_This is a fork of https://github.com/Glavnokoman/vuh_
+**_This is a fork of https://github.com/Glavnokoman/vuh_**
 
 # Watch out!
 I do not have time or interest any more to further maintain or develop this.
